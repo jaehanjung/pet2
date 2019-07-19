@@ -170,7 +170,6 @@ a:hover {
     position: relative;
     background: gold;
     color: white;
-    font-size: 11px;
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;
@@ -196,7 +195,6 @@ a:hover {
     position: relative;
     background: silver;
     color: white;
-    font-size: 11px;
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;
@@ -221,7 +219,6 @@ a:hover {
     position: relative;
     background: rgb(220, 181, 148);
     color: white;
-    font-size: 11px;
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;

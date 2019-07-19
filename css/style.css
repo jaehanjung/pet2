@@ -426,9 +426,9 @@
 
 .swiper3 .swiper_boxs .swiper_box_top .carusel_num {
     position: absolute;
-    top: 4px;
-    left: 13px;
-    font-size: 0.769em;
+    top: 2px;
+    left: 12px;
+    font-size: 1.000em;
     font-weight: bold;
     z-index: 10;
     color: #fff;

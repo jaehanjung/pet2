@@ -137,12 +137,106 @@ a:hover {
     display: none !important;
 }
 
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
 .container {
     max-width: 100%;
     padding: 0px;
     margin: 0px;
     min-height: 100vh;
     width: 100%;
+    background-color: #e6e3e3;
+}
+
+.lebone {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.lebone div {
+    float: left;
+}
+
+.gold {
+    width: 50px;
+    height: 38px;
+    box-sizing: content-box;
+    position: relative;
+    background: gold;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 5px;
+}
+
+.gold:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.silver {
+    width: 50px;
+    height: 30px;
+    box-sizing: content-box;
+    position: relative;
+    background: silver;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.silver:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.copper {
+    width: 50px;
+    height: 30px;
+    box-sizing: content-box;
+    position: relative;
+    background: rgb(220, 181, 148);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.copper:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
 }
 
 .calorie_text_orange {

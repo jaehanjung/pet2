@@ -308,6 +308,48 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="swiper-slide swiper2-slide" style="padding: 0px;">
+                            <!-- <a class="swiper_boxs" href="#">
+                                <div class="swiper_box_top">
+                                    <span class="carusel_num">11</span>
+                                    <span class="calorie">
+                                        <i class="fas fa-exclamation-triangle text-orange"></i>
+                                        <span>열량</span>
+                                    </span>
+                                    <span class="additive_color additive_bgc_yellow">
+                                        &nbsp;
+                                    </span>
+                                </div>
+                                <div class="top10_img">
+                                    <img src="/img/top_1.jpg" alt="" />
+                                </div>
+                                <div class="carusel_menu">
+                                    <p class="carusel_title">순살치킨너겟</p>
+                                    <span class="carusel_maker">매일</span>
+                                </div>
+                            </a> -->
+                        </div>
+                        <div class="swiper-slide swiper2-slide" style="padding: 0px;">
+                            <!-- <a class="swiper_boxs" href="#">
+                                <div class="swiper_box_top">
+                                    <span class="carusel_num">12</span>
+                                    <span class="calorie">
+                                        <i class="fas fa-exclamation-triangle text-orange"></i>
+                                        <span>열량</span>
+                                    </span>
+                                    <span class="additive_color additive_bgc_yellow">
+                                        &nbsp;
+                                    </span>
+                                </div>
+                                <div class="top10_img">
+                                    <img src="/img/top_1.jpg" alt="" />
+                                </div>
+                                <div class="carusel_menu">
+                                    <p class="carusel_title">순살치킨너겟</p>
+                                    <span class="carusel_maker">매일</span>
+                                </div>
+                            </a> -->
+                        </div>
                     </div>
                 </div>
                 <div class="best_comment clearfix">
@@ -437,6 +479,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="view_all">
+                    <a class="view_all_link" href="#">
+                        <span class="view_all_text">전체보기</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -456,25 +503,26 @@
     </script>
     <script>
         var swiper = new Swiper(".swiper2", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            // slidesPerView: 3,
+            // spaceBetween: 30,
             // init: false,
+            loopFillGroupWithBlank: true,
             breakpoints: {
                 1024: {
                     slidesPerView: 4,
-                    spaceBetween: 40
+                    spaceBetween: 10
                 },
                 768: {
                     slidesPerView: 3,
                     spaceBetween: 10
                 },
                 640: {
-                    slidesPerView: 3.4,
-                    spaceBetween: 30
+                    slidesPerView: 3,
+                    spaceBetween: 10
                 },
                 320: {
                     slidesPerView: 3,
-                    spaceBetween: 40
+                    spaceBetween: 10
                 }
             }
         });

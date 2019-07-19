@@ -177,10 +177,10 @@
 }
 
 .swiper2 .swiper2-slide {
-    margin-right: 10px !important;
+    /* margin-right: 10px !important; */
     position: relative;
     padding-bottom: 5px;
-    width: 100px !important;
+    /* width: 100px !important; */
 }
 
 
@@ -267,14 +267,18 @@
 }
 
 .swiper2 .top10_img {
-    width: 100%;
+    /* width: 100px; */
     height: 100px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .swiper2 img {
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
 }
 
 .swiper2 .carusel_menu {
@@ -358,20 +362,27 @@
 
 /* 카테고리별 랭킹 */
 .category {
-    padding: 5px;
+    padding: 0px;
     background-color: #fff;
     margin-top: 10px;
     position: relative;
 }
 
 .category .title {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.category.section_card .subject {
     padding-left: 5px;
+    width: 100%;
 }
 
 /* 실시간조회 top10 스와이프 캐러셀 */
 .swiper3 {
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 .swiper3 .swiper-wrapper {
@@ -521,4 +532,35 @@
 .swiper3 .carusel_maker {
     font-size: 0.769em;
     color: gray;
+}
+
+/* 전체보기 링크 영역 */
+.view_all {
+    border-top: 1px solid #f4f4f4;
+    text-align: center;
+}
+
+.view_all .view_all_link {
+    display: block;
+    padding: 10px 0px;
+}
+
+.view_all .view_all_link .view_all_text {
+    padding-right: 20px;
+    position: relative;
+    font-weight: bold;
+    color: #E95468;
+}
+
+.view_all .view_all_link .view_all_text::after {
+    transform: rotate(45deg);
+    height: 8px;
+    width: 8px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    margin: -5px 0 0 -8px;
+    border: 1px solid #E95468;
+    border-width: 2px 2px 0 0;
 }

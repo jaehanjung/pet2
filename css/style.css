@@ -419,8 +419,9 @@
 
 .swiper3 .swiper_boxs .swiper_box_top .carusel_num_img {
     position: relative;
-    top: -7px;
+    top: -3px;
     left: 0px;
+    height: 30px;
 }
 
 .swiper3 .swiper_boxs .swiper_box_top .carusel_num {

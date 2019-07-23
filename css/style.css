@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* section_header 영역 */
 .section_header {
     width: 100%;
@@ -31,7 +30,7 @@
 .section_header .section_header_info .steamed_food {
     display: block;
     color: #000;
-    font-size: 1.154em;
+    font-size: 1.500em;
     font-weight: bold;
     height: 38px;
     line-height: 2.5;
@@ -39,7 +38,7 @@
 
 .section_header .section_header_info .label {
     color: #989898;
-    font-size: 0.769em;
+    font-size: 1.000em;
 }
 
 .section_header .section_header_info .user_img {
@@ -72,7 +71,7 @@
 }
 
 .swiper1 .swiper-pagination-fraction {
-    font-size: 12px;
+    font-size: 1.200em;
     color: #fff;
     background-color: #464343;
     opacity: 0.5;
@@ -91,7 +90,7 @@
 
 .swiper1 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.800em;
     background: #fff;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -116,7 +115,7 @@
 
 .section_card .title {
     margin-bottom: 15px;
-    font-size: 1.077em;
+    font-size: 1.400em;
     font-weight: bold;
 }
 
@@ -228,7 +227,7 @@
 }
 
 .swiper2 .carusel_num {
-    font-size: 1.077em;
+    font-size: 1.400em;
     font-weight: bold;
     /* padding: 10px; */
     z-index: 10;
@@ -236,7 +235,7 @@
 }
 
 .swiper2 .swiper_boxs .calorie {
-    font-size: 0.769em;
+    font-size: 1.000em;
     position: relative;
     left: 26px;
 }
@@ -245,7 +244,7 @@
     position: absolute;
     top: 1px;
     left: -7px;
-    font-size: 13px
+    font-size: 1.300em;
 }
 
 .swiper2 .swiper_boxs .calorie span {
@@ -253,7 +252,7 @@
     border-radius: 0px 5px 5px 0px;
     border-left: none;
     padding: 0px 4px 0px 8px;
-    font-size: 10px;
+    font-size: 1.000em;
     color: gray;
 }
 
@@ -287,7 +286,7 @@
 }
 
 .swiper2 .carusel_title {
-    font-size: 0.846em;
+    font-size: 1.100em;
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -296,7 +295,7 @@
 }
 
 .swiper2 .carusel_maker {
-    font-size: 0.769em;
+    font-size: 1.000em;
     color: gray;
 }
 
@@ -331,7 +330,7 @@
     bottom: -6px;
     left: 8px;
     color: #fff;
-    font-size: 0.769em;
+    font-size: 1.000em;
     font-weight: bold;
     border: 1px solid #E95468;
     background-color: #E95468;
@@ -356,7 +355,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    font-size: 0.846em;
+    font-size: 1.100em;
 }
 
 
@@ -438,7 +437,7 @@
 .swiper3 .swiper_boxs .swiper_box_top .carusel_num {
     position: absolute;
     top: 2px;
-    left: 12px;
+    left: 1.200em;
     font-size: 1.000em;
     font-weight: bold;
     z-index: 10;
@@ -474,7 +473,7 @@
 
 
 .swiper3 .swiper_boxs .calorie {
-    font-size: 0.769em;
+    font-size: 1.000em;
     position: relative;
     left: 26px;
 }
@@ -483,7 +482,7 @@
     position: absolute;
     top: 1px;
     left: -7px;
-    font-size: 13px
+    font-size: 1.300em;
 }
 
 .swiper3 .swiper_boxs .calorie span {
@@ -491,7 +490,7 @@
     border-radius: 0px 5px 5px 0px;
     border-left: none;
     padding: 0px 4px 0px 8px;
-    font-size: 10px;
+    font-size: 1.000em;
     color: gray;
 }
 
@@ -521,7 +520,7 @@
 }
 
 .swiper3 .carusel_title {
-    font-size: 0.846em;
+    font-size: 1.100em;
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -530,7 +529,7 @@
 }
 
 .swiper3 .carusel_maker {
-    font-size: 0.769em;
+    font-size: 1.000em;
     color: gray;
 }
 
@@ -542,7 +541,7 @@
 
 .view_all .view_all_link {
     display: block;
-    padding: 10px 0px;
+    rrrrrrr padding: 10px 0px;
 }
 
 .view_all .view_all_link .view_all_text {
@@ -550,6 +549,7 @@
     position: relative;
     font-weight: bold;
     color: #E95468;
+    font-size: 1.300em;
 }
 
 .view_all .view_all_link .view_all_text::after {
@@ -563,4 +563,180 @@
     margin: -5px 0 0 -8px;
     border: 1px solid #E95468;
     border-width: 2px 2px 0 0;
+}
+
+/* 검색 결과 페이지 */
+.search_results {
+    width: 100%;
+    height: 100%;
+}
+
+.search_results .results_box {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+    border-top: 1px solid #ababab;
+}
+
+
+.search_results .results_box:last-child {
+    border-top: 1px solid #ababab;
+    border-bottom: 1px solid #ababab;
+}
+
+.search_results .results_box .additive_color {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.search_results .results_box .results_img {
+    width: 20%;
+    max-width: 20%;
+}
+
+.search_results .results_box .results_img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.search_results .results_box .results_content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    padding: 0px 0px 0px 20px;
+    justify-content: space-between;
+}
+
+.search_results .results_box .results_content .title {
+    font-size: 1.000em;
+    color: #ababab
+}
+
+.search_results .results_box .results_content .contents {
+    font-weight: bold;
+    font-size: 1.300em;
+}
+
+.search_results .results_box .results_content .comment div {
+    display: inline-block;
+}
+
+.search_results .results_box .results_content .comment span {
+    color: #ababab;
+}
+
+.fa-eye,
+.fa-comment-dots {
+    color: rgb(210, 189, 124);
+    font-weight: 100;
+}
+
+/* 상품정보 페이지 영역 */
+.product_info {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.product_info .product_info_box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.product_info .product_info_box .title {
+    font-size: 1.400em;
+    font-weight: bold;
+    letter-spacing: -0.077em;
+}
+
+.product_info .product_info_box .title span {
+    border: 1px solid #ababab;
+    border-radius: 50%;
+    padding: 0px 4px;
+    font-size: 1.000em;
+    color: #ababab;
+    margin-left: 3px;
+}
+
+.product_info .product_info_box .maker {
+    margin-top: 0.385em;
+    color: rgb(210, 93, 111);
+    font-size: 1.400em;
+    font-weight: bold;
+    letter-spacing: -0.077em;
+}
+
+.product_info .product_info_box .product_img {
+    padding: 20px 50px;
+    height: 210px;
+}
+
+.product_info .product_info_box .product_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.product_info .product_info_box .flag_img img {
+    width: 18px;
+    vertical-align: top;
+}
+
+.product_info .product_info_box .flag_img span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product_info .product_info_box .satisfaction_evaluation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product_info .product_info_box .satisfaction_evaluation .satisfaction_box {
+    display: flex;
+    border: 1px solid #f3f3f3;
+    padding: 10px;
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.product_info .product_info_box .satisfaction_evaluation .satisfaction_box .satisfaction {
+    padding-right: 4px;
+}
+
+.product_info .product_info_box .satisfaction_evaluation .satisfaction_box .repurchase {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.product_info .product_info_box .satisfaction_evaluation .satisfaction_box .evaluation {
+    color: #ababab;
+    position: relative;
+    padding-right: 10px;
+}
+
+.product_info .product_info_box .satisfaction_evaluation .satisfaction_box .evaluation::after {
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    content: "";
+    position: absolute;
+    margin: -3px 0 0 -8px;
+    border: 1px solid #ababab;
+    border-width: 1px 1px 0 0;
+    right: 0;
+    top: 50%;
 }

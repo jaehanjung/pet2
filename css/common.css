@@ -33,7 +33,7 @@ textarea,
 select,
 button,
 table {
-    font-size: 13px
+    font-size: 10px
 }
 
 img,
@@ -242,6 +242,10 @@ a:hover {
 
 .calorie_text_rad {
     color: #af3a0b;
+}
+
+.text_pink2 {
+    color: rgb(210, 93, 111);
 }
 
 .additive_bgc_gray {

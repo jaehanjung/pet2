@@ -618,13 +618,17 @@
 }
 
 .search_results .results_box .results_content .title {
-    font-size: 1.000em;
+    font-size: 1.300em;
     color: #ababab
 }
 
 .search_results .results_box .results_content .contents {
     font-weight: bold;
     font-size: 1.300em;
+}
+
+.search_results .results_box .results_content .comment {
+    font-size: 1.2em;
 }
 
 .search_results .results_box .results_content .comment div {
@@ -712,6 +716,7 @@
     padding: 10px;
     background-color: #f3f3f3;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .product_info .product_info_box .satisfaction_evaluation .satisfaction_box .satisfaction {
@@ -748,6 +753,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 1.2em;
 }
 
 .product_info .additive_box .additive {
@@ -845,7 +851,7 @@
 }
 
 .product_info .additive_box .target_age .fa-cat {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .product_info .additive_box .additive_text {

@@ -73,7 +73,6 @@
                                     </span>
                                     <span class="additive_text">성분미표기</span>
                                 </div>
-
                             </div>
                         </div>
                         <div class="target_age">
@@ -83,17 +82,53 @@
                         </div>
                     </div>
                 </div>
+                <div class="brand_story_box">
+                    <p class="title">브랜드 스토리</p>
+                    <div class="brand_story_img">
+                        <img src="/img/brand_nlihome.jpg" alt="">
+                    </div>
+                    <div class="btn">
+                        <a class="view_all_link" href="#">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <span class="ir_su text_pink2" style="display: none">펼치기</span>
+                            <span class="ir_no text_pink2">접기</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
         goPage = function (url) {
             window.location.href = url;
         }
     </script>
+    <script>
+        //접기/펼치기
+        $(".btn").click(function (e) {
+            e.preventDefault();
+            $(".brand_story_img").slideToggle();
+            $(".btn").toggleClass("open");
+            //var btn = $(".btn").find(">i").attr("class");
+            //alert(btn);
 
+            if ($(".btn").hasClass("open")) {
+                //open이 있을 때
+                $(".view_all_link").find(">i").attr("class", "fa fa-angle-down");
+                $(".view_all_link").find(".ir_su").attr("style", "display:inline-block;");
+                $(".view_all_link").find(".ir_no").attr("style", "display:none;");
+            } else {
+                //open이 없을 때
+                $(".view_all_link").find(">i").attr("class", "fa fa-angle-up");
+                $(".view_all_link").find(".ir_no").attr("style", "display:inline-block;");
+                $(".view_all_link").find(".ir_su").attr("style", "display:none;");
+            }
+        });
+    </script>
 </body>
 
 </html>

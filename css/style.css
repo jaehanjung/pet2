@@ -648,15 +648,14 @@
 /* 상품정보 페이지 영역 */
 .product_info {
     width: 100%;
-    height: 100%;
-    background-color: #fff;
 }
 
 .product_info .product_info_box {
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 10px 0px 0px 0px;
     text-align: center;
+    background-color: #fff;
 }
 
 .product_info .product_info_box .title {
@@ -676,7 +675,7 @@
 
 .product_info .product_info_box .maker {
     margin-top: 0.385em;
-    color: rgb(210, 93, 111);
+    color: #E95468;
     font-size: 1.400em;
     font-weight: bold;
     letter-spacing: -0.077em;
@@ -749,7 +748,8 @@
 
 /* 상품정보 첨가물 영역 */
 .product_info .additive_box {
-    border: 1px dotted #000;
+    border: 1px dotted #ababab;
+    border-bottom: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -758,7 +758,7 @@
 
 .product_info .additive_box .additive {
     width: 60%;
-    border-right: 1px dotted #000;
+    border-right: 1px dotted #ababab;
     padding: 10px;
 }
 
@@ -861,4 +861,45 @@
 
 .font_12 {
     font-size: 1.2em;
+}
+
+
+/* 브랜드스토리 영역 */
+.product_info .brand_story_box {
+    margin-top: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .brand_story_box .title {
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.product_info .brand_story_box .brand_story_img {
+    background: #e6e3e3;
+    padding-bottom: 5px;
+}
+
+.product_info .brand_story_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.brand_story_box .btn {
+    color: #000;
+    font-size: 1.300em;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn .view_all_link {
+    display: block;
+    padding: 10px 0px;
+}
+
+.fa-angle-up,
+.fa-angle-down {
+    color: #E95468;
 }

@@ -537,11 +537,12 @@
 .view_all {
     border-top: 1px solid #f4f4f4;
     text-align: center;
+    margin-top: 5px;
 }
 
 .view_all .view_all_link {
     display: block;
-    rrrrrrr padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 .view_all .view_all_link .view_all_text {

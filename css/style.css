@@ -1206,6 +1206,7 @@
 .product_info .nutrient_composition .guideline_filter .filter_btn {
     display: flex;
     flex-direction: row;
+    font-size: 1.1em;
 }
 
 .product_info .nutrient_composition .guideline_filter .filter_btn span {

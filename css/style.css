@@ -267,7 +267,7 @@
 
 .swiper2 .top10_img {
     /* width: 100px; */
-    height: 100px;
+    max-height: 114px;
     padding: 10px;
     margin: 0 auto;
 }
@@ -306,7 +306,7 @@
 }
 
 .inquiry_period_top10 .best_comment .user_img_box {
-    width: 15%;
+    /* width: 15%; */
     float: left;
     position: relative;
 }
@@ -338,7 +338,8 @@
 
 .inquiry_period_top10 .best_comment .user_comment {
     float: left;
-    width: 85%;
+    width: 82%;
+    margin-left: 5px;
 }
 
 .inquiry_period_top10 .best_comment .user_comment .user_name {
@@ -505,7 +506,7 @@
 
 .swiper3 .top10_img {
     width: 100%;
-    height: 100px;
+    max-height: 114px;
     padding: 10px;
 }
 
@@ -683,7 +684,7 @@
 
 .product_info .product_info_box .product_img {
     padding: 0px 20%;
-    height: 210px;
+    max-height: 210px;
 }
 
 .product_info .product_info_box .product_img img {
@@ -879,7 +880,7 @@
 
 .product_info .brand_story_box .brand_story_img {
     background: #e6e3e3;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 .product_info .brand_story_box img {
@@ -887,14 +888,14 @@
     height: 100%;
 }
 
-.brand_story_box .btn {
+.product_info .brand_story_box .brand_story_btn {
     color: #000;
     font-size: 1.300em;
     transition: all 0.3s ease;
     text-align: center;
 }
 
-.btn .view_all_link {
+.product_info .brand_story_btn .view_all_link {
     display: block;
     padding: 10px 0px;
 }
@@ -902,4 +903,255 @@
 .fa-angle-up,
 .fa-angle-down {
     color: #E95468;
+}
+
+/* 푸드톡 영역 */
+.product_info .food_talk {
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .food_talk .title {
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product_info .food_talk .title .food_talk_link {
+    color: #E95468;
+    font-size: 0.857em;
+}
+
+.product_info .food_talk .best_comment {
+    margin-top: 10px;
+    position: relative;
+}
+
+.product_info .food_talk .best_comment .user_img_box {
+    /* width: 15%; */
+    float: left;
+    position: relative;
+}
+
+.product_info .food_talk .best_comment .user_img {
+    float: left;
+    border-radius: 50%;
+    border: 3px solid #E95468;
+    width: 42px;
+    height: 40px;
+}
+
+.product_info .food_talk .best_comment img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.product_info .food_talk .best_comment .user_img span {
+    position: absolute;
+    bottom: -6px;
+    left: 9px;
+    color: #fff;
+    font-size: 1.000em;
+    font-weight: bold;
+    border: 1px solid #E95468;
+    background-color: #E95468;
+}
+
+.product_info .food_talk .best_comment .user_comment {
+    float: left;
+    width: 82%;
+    margin-left: 5px;
+}
+
+.product_info .food_talk .best_comment .user_comment .user_name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.product_info .food_talk .best_comment .user_comment .species {
+    color: #ababab;
+}
+
+.product_info .food_talk .best_comment .user_comment .user_best_comment {
+    width: 100%;
+    white-space: normal;
+    line-height: 1.4;
+    height: 48px;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 1.100em;
+}
+
+/* 에밀리 추천상품영역 */
+.product_info .recommended_products {
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .recommended_products .title {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.swiper4 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper4 .swiper4-slide {
+    position: relative;
+}
+
+.swiper4 .swiper4-slide .swiper_boxs {
+    display: block;
+    border: 1px solid #989898;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.swiper4 .swiper_boxs .swiper_box_top {
+    position: relative;
+    height: 15px;
+}
+
+.swiper4 .swiper_boxs .additive_color {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.swiper4 .top10_img {
+    width: 100%;
+    max-height: 114px;
+    padding: 10px;
+}
+
+.swiper4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper4 .carusel_menu {
+    width: 100%;
+    text-align: center;
+}
+
+.swiper4 .carusel_title {
+    font-size: 1.100em;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.swiper4 .carusel_maker {
+    font-size: 1.000em;
+    color: gray;
+}
+
+/* 수정요청 제휴문의 영역 */
+.product_info .request {
+    margin: 10px 0px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #828282;
+    font-size: 1.2em;
+}
+
+.product_info .request .amendment {
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid #e6e3e3;
+}
+
+.product_info .request .alliance {
+    width: 50%;
+    padding: 10px;
+}
+
+/* 식품첨가물 영역 */
+.product_info .food_additives {
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .food_additives .title {
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #989898;
+}
+
+.product_info .food_additives .ingredient_box {
+    padding: 10px;
+}
+
+.product_info .food_additives .ingredient_box .fa-hubspot {
+    color: #828282;
+    margin-right: 4px;
+}
+
+.product_info .food_additives .ingredient_box .flat-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.product_info .food_additives .ingredient_box .flat-table tbody tr {
+    border-bottom: 1px solid #989898;
+}
+
+.product_info .food_additives .ingredient_box .flat-table th {
+    font-size: 1.2em;
+    color: #757373;
+}
+
+.product_info .food_additives .ingredient_box .flat-table td {
+    padding: 10px 0px;
+}
+
+.product_info .food_additives .ingredient_box .flat-table td.ingredient {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+
+.product_info .food_additives .ingredient_box .flat-table td.ingredient .additive_color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.product_info .food_additives .ingredient_box .flat-table td.Usage {
+    font-size: 1.2em;
+    color: #7b7b7b;
+    font-weight: bold;
+}
+
+.product_info .food_additives .ingredient_box .flat-table td.explanation {
+    color: #E95468;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.1em;
 }

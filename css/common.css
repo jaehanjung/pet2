@@ -248,6 +248,10 @@ a:hover {
     color: #E95468;
 }
 
+.text_green2 {
+    color: #26ce09 !important;
+}
+
 .additive_bgc_gray {
     background-color: rgb(155, 155, 155);
 }
@@ -266,4 +270,18 @@ a:hover {
 
 .additive_bgc_green {
     background-color: rgb(149, 206, 99);
+}
+
+.fa-hubspot,
+.fa-utensils,
+.fa-chart-pie {
+    color: #ababab;
+    margin-right: 4px;
+}
+
+.nutrient_table_bgc_red {
+    background-color: #ecd7de;
+}
+.nutrient_table_bgc_gray{
+    background-color: #e6e3e3;
 }

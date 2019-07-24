@@ -900,8 +900,8 @@
     padding: 10px 0px;
 }
 
-.fa-angle-up,
-.fa-angle-down {
+.product_info .brand_story_btn .fa-angle-up,
+.product_info .brand_story_btn .fa-angle-down {
     color: #E95468;
 }
 
@@ -1093,6 +1093,7 @@
     background-color: #fff;
 }
 
+
 .product_info .food_additives .title {
     padding: 10px;
     font-size: 1.4em;
@@ -1153,5 +1154,191 @@
     color: #E95468;
     text-align: right;
     font-weight: 600;
+    font-size: 1.1em;
+}
+
+.with_reference {
+    letter-spacing: -1px;
+    color: #7b7b7b;
+}
+
+/* 일반 원재료 영역 */
+.product_info .materials {
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .materials .title {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.product_info .materials .content {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* 영양성분구성 비율 영역 */
+.product_info .nutrient_composition {
+    margin-top: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.product_info .nutrient_composition .title {
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.product_info .nutrient_composition .guideline_filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    letter-spacing: -1px;
+}
+
+.product_info .nutrient_composition .guideline_filter .filter_btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.product_info .nutrient_composition .guideline_filter .filter_btn span {
+    text-align: center;
+    padding: 0.300em 1em;
+    border: 1px solid #7b7b7b;
+    border-radius: 15px 15px;
+    color: #7b7b7b;
+    margin-left: 5px;
+}
+
+.product_info .nutrient_composition .guideline_filter .filter_btn .select {
+    background-color: #E95468;
+    color: #fff;
+    border: 1px solid #E95468;
+}
+
+.product_info .nutrient_composition .nutrient_table {
+    margin-bottom: 10px;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table tbody tr td:first-child {
+    border-left: none;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table tbody tr td:last-child {
+    border-right: none;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table th {
+    font-size: 1.2em;
+    color: #000;
+    background-color: #e6e3e3;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table th:first-child {
+    background-color: #fff;
+    border-left: none;
+    border-top: none;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table td {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table td.ingredient {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table td.ingredient .additive_color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table td.Usage {
+    font-size: 1.2em;
+    color: #7b7b7b;
+    font-weight: bold;
+}
+
+.product_info .nutrient_composition .nutrient_table .flat-table td.explanation {
+    color: #E95468;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.product_info .nutrient_composition .nutrient_table th,
+.product_info .nutrient_composition .nutrient_table td {
+    padding: 5px;
+    border: 1px solid #7b7b7b;
+}
+
+td:empty {
+    border: none;
+}
+
+.product_info .nutrient_composition .with_reference {
+    padding: 10px;
+}
+
+/* 식품 정보 최종 업데이트 영역 */
+.product_info .last_updated {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    color: #828282;
+    font-size: 1.3em;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.product_info .last_updated .title {
+    padding: 10px;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+}
+
+.product_info .last_updated .title .update {
+    font-size: 1.1em;
+}
+
+.product_info .last_updated .last_updated_box {
+    padding: 0px 10px 10px 10px;
+}
+
+.product_info .last_updated .last_updated_box .title {
+    padding: 10px 15px 0px 0px;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.product_info .last_updated .last_updated_box .title:first-child {
+    border-top: 1px solid #989898;
+}
+
+.product_info .last_updated .last_updated_box .title .date {
     font-size: 1.1em;
 }

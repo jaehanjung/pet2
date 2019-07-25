@@ -15,6 +15,31 @@
 <body>
     <div id="wrap">
         <div class="container">
+            <div class="modal_viw"></div>
+            <div class="all_modal">
+                <div class="food_additives_modal">
+                    <i class="fas fa-times close"></i>
+                    <p class="title">비타민C</p>
+                    <div class="rating">
+                        <span class="additive_color additive_bgc_green"></span>
+                        <span class="rating_title">EWG 등급: No Concerns</span>
+                        <p class="rating_content">건강에 부정적인 영향을 미칠 가능성이 없는 성분입니다.</p>
+                    </div>
+                    <div class="main_purpose">
+                        <i class="fab fa-hubspot"></i>
+                        <span class="main_purpose_title">주용도: 산화방지제</span>
+                        <p class="main_purpose_content">산화에 의한 식품의 품질 저하를 방지하는 식품첨가물 입니다.</p>
+                    </div>
+                    <div class="other_uses">
+                        <div class="left_other_uses">
+                            이외용도
+                        </div>
+                        <div class="right_other_uses">
+                            영양강화제
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="product_info">
                 <div class="product_info_box">
                     <span class="title">
@@ -103,7 +128,7 @@
                     <div class="best_comment clearfix">
                         <div class="user_img_box clearfix">
                             <span class="user_img">
-                                <img src="/sources/source/img/main_img/main_swiper4.jpg" alt="">
+                                <img src="/img/top_1.jpg" alt="">
                                 <span>BEST</span>
                             </span>
                         </div>
@@ -320,7 +345,7 @@
                         <p>식품 정보 최종 업데이트</p>
                         <span class="update">2019-05-03 <i class="fa fa-angle-down" aria-hidden="true"></i></span>
                     </div>
-                    <div class="last_updated_box">
+                    <div class="last_updated_box" style="display:none;">
                         <div class="title">
                             <p>식품 정보 최종 업데이트</p>
                             <span class="date">2019-05-03</span>
@@ -373,6 +398,25 @@
                 //open이 없을 때
                 $(".update").find(">i").attr("class", "fa fa-angle-up");
             }
+        });
+        // 모달창 띄우기
+        $('.explanation').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.modal_viw').removeClass('disable');
+            $('.all_modal').removeClass('disable');
+        });
+        $('.modal_viw').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+        });
+        $('.close').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
         });
     </script>
     <script>

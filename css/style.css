@@ -1343,3 +1343,119 @@ td:empty {
 .product_info .last_updated .last_updated_box .title .date {
     font-size: 1.1em;
 }
+
+/* 식품첨가물 모달영역 */
+.modal_viw {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    zoom: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.all_modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.all_modal .food_additives_modal {
+    margin: 0 auto;
+    width: 65%;
+    z-index: 1005;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 10px 40px 10px;
+    position: relative;
+}
+
+.all_modal .food_additives_modal .close {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 1.6em;
+    color: #828282;
+}
+
+.all_modal .food_additives_modal .title {
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.all_modal .food_additives_modal .rating {
+    position: relative;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.all_modal .food_additives_modal .rating .additive_color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.all_modal .food_additives_modal .rating .rating_title {
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+}
+
+.all_modal .food_additives_modal .rating .rating_content {
+    padding: 5px 0px 0px 18px;
+    font-size: 1.2em;
+}
+
+.all_modal .food_additives_modal .main_purpose {
+    position: relative;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.all_modal .food_additives_modal .main_purpose .fa-hubspot {
+    font-size: 1.5em;
+    margin-right: 0px;
+}
+
+.all_modal .food_additives_modal .main_purpose .main_purpose_title {
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+}
+
+.all_modal .food_additives_modal .main_purpose .main_purpose_content {
+    padding: 5px 0px 0px 18px;
+    font-size: 1.2em;
+}
+
+.all_modal .food_additives_modal .other_uses {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: #828282;
+    border: 1px solid #e6e3e3;
+}
+
+.all_modal .food_additives_modal .other_uses .left_other_uses {
+    padding: 10px 2px;
+    border-right: 1px solid #e6e3e3;
+    background-color: #e6e3e3;
+}
+
+.all_modal .food_additives_modal .other_uses .right_other_uses {
+    width: 70%;
+    padding: 10px;
+}

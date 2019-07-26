@@ -15,6 +15,24 @@
 <body>
     <div id="wrap">
         <div class="container">
+            <div class="modal_viw disable"></div>
+            <div class="all_modal disable">
+                <div class="report_btn">
+                    <span>신고하기</span>
+                </div>
+                <div class="report disable">
+                    <p>신고하기</p>
+                    <span>에밀리 푸드톡의 운영원칙과 성격에 맞지 않는 푸드톡을 신고합니다</span>
+                    <div class="report_btn_box">
+                        <button class="Cancellation">
+                            취소
+                        </button>
+                        <button class="Check">
+                            확인
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="foodtalk_box">
                 <div class="satisfaction">
                     <div class="satisfaction_box">
@@ -92,6 +110,9 @@
                         </p>
                     </div>
                     <div class="comments clearfix">
+                        <div class="post_func">
+                            <button type="button" class="post_set _btnPostMore gIcon icon-more"></button>
+                        </div>
                         <div class="user_img_box clearfix">
                             <span class="user_img">
                                 <img src="/img/top_1.jpg" alt="">
@@ -129,6 +150,34 @@
                                     </a>
                                     <span class="useful">유용해요 2개</span>
                                     <span class="comment_btn">댓글 +</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments_plus">
+                            <div class="user_img_box clearfix">
+                                <span class="user_img">
+                                    <img src="/img/top_1.jpg" alt="">
+                                    <span>BEST</span>
+                                </span>
+                            </div>
+                            <div class="user_comment ellipsis">
+                                <p class="user_name">
+                                    유윤맘
+                                </p>
+                                <span class="user_best_comment ellipsis"><span>@나도남매맘</span> 영양소도좋고 맛있어요.영양소도좋고 맛있어요.영양소도좋고 맛있어요.맛있어요.영양소도좋고 맛있어요.영양소도좋고 맛있어요.</span>
+                                <div class="date">
+                                    <span class="date_content">
+                                        2018-08-20
+                                    </span>
+                                    <div class="like_comment">
+                                        <a href="javascript:void(0);" class="like-button">
+                                            <i class="material-icons not-liked bouncy">favorite_border</i>
+                                            <i class="material-icons is-liked bouncy">favorite</i>
+                                            <span class="like-overlay"></span>
+                                        </a>
+                                        <span class="useful">유용해요 2개</span>
+                                        <span class="comment_btn">댓글 +</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -456,11 +505,53 @@
         //     $(this).addClass('on').prevAll('span').addClass('on');
         //     return false;
         // });
+        // 유용해요 버튼 
         $(document).ready(function () {
             $('.like-button').click(function () {
                 $(this).toggleClass('is-active');
             })
         })
+        // 푸드톡 기타창 신고하기 모달창 영역
+        $('.post_func').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.modal_viw').removeClass('disable');
+            $('.all_modal').removeClass('disable');
+        });
+        // 모달창 바탕 클릭시 삭제되는 영역
+        $('.modal_viw').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 취소버튼 클릭시 닫히는 영역
+        $('.Cancellation').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 확인버튼 클릭시 닫히는 영역
+        $('.Check').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 신고하기 버튼 클릭시 
+        $('.report_btn').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.report_btn').addClass('disable');
+            $('.report').removeClass('disable');
+        });
     </script>
     <script>
         var swiper = new Swiper(".swiper4", {

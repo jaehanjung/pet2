@@ -15,8 +15,8 @@
 <body>
     <div id="wrap">
         <div class="container">
-            <div class="modal_viw"></div>
-            <div class="all_modal">
+            <div class="modal_viw disable"></div>
+            <div class="all_modal disable">
                 <div class="food_additives_modal">
                     <i class="fas fa-times close"></i>
                     <p class="title">비타민C</p>
@@ -120,7 +120,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="food_talk">
+                <div class="food_talk" onclick="javascript:goPage('/foodtalk.html');">
                     <div class="title">
                         <p>푸드톡</p>
                         <span class="food_talk_link">11개 푸드톡 ></span>
@@ -399,19 +399,21 @@
                 $(".update").find(">i").attr("class", "fa fa-angle-up");
             }
         });
-        // 모달창 띄우기
+        // 식품 첨가물 모달창 띄우기
         $('.explanation').on('click', function (e) {
             e.stopPropagation();
             e.preventDefault();
             $('.modal_viw').removeClass('disable');
             $('.all_modal').removeClass('disable');
         });
+        // 모달창 바탕 클릭시 삭제되는 영역
         $('.modal_viw').on('click', function (e) {
             e.stopPropagation();
             e.preventDefault();
             $('.all_modal').addClass('disable');
             $('.modal_viw').addClass('disable');
         });
+        // 닫기버튼 클릭시 닫히는 영역
         $('.close').on('click', function (e) {
             e.stopPropagation();
             e.preventDefault();

@@ -941,7 +941,7 @@
     float: left;
     border-radius: 50%;
     border: 3px solid #E95468;
-    width: 42px;
+    /* width: 42px; */
     height: 40px;
 }
 
@@ -1458,4 +1458,310 @@ td:empty {
 .all_modal .food_additives_modal .other_uses .right_other_uses {
     width: 70%;
     padding: 10px;
+}
+
+
+/* foodtalk 영역 */
+.foodtalk_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.foodtalk_box .satisfaction {
+    height: 190px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.foodtalk_box .satisfaction .satisfaction_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: 1px solid #f3f3f3;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction .average_satisfaction_img {
+    width: 40%;
+    margin: auto;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction img {
+    width: 100%;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction .title_content {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction .title_content .title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction .title_content .Score {
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #E95468;
+}
+
+.foodtalk_box .satisfaction .satisfaction_box .average_satisfaction .title_content .overall_evaluation {
+    font-size: 1.2em;
+    color: #928b8b;
+}
+
+/* 평균만족도 그래프 영역 */
+.foodtalk_box .satisfaction .satisfaction_graph {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foodtalk_box .satisfaction .satisfaction_graph .gpa_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2px 0px;
+}
+
+.foodtalk_box .satisfaction .satisfaction_graph .gpa_box span {
+    color: #928b8b;
+    font-weight: bold;
+}
+
+.foodtalk_box .satisfaction .satisfaction_graph .gpa_box span.select {
+    color: #E95468;
+}
+
+.foodtalk_box .satisfaction .satisfaction_graph .max {
+    height: 13px;
+    width: 60%;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+}
+
+.foodtalk_box .satisfaction .satisfaction_graph .max .amount {
+    width: 66%;
+    background-color: #E95468;
+    height: 13px;
+    opacity: .9;
+    border-radius: 2px;
+}
+
+
+/* 재구매 의사  영역*/
+.foodtalk_box .repurchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #f3f3f3;
+    border-left: none;
+    border-right: none;
+    background-color: #f3f3f3;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.foodtalk_box .repurchase .title {
+    padding: 5px 10px;
+    border-right: 1px solid #9c9c9c;
+}
+
+.foodtalk_box .repurchase .no_intention {
+    padding: 5px 0px;
+}
+
+.foodtalk_box .repurchase .no_intention span:first-child {
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    padding: 5px 5px;
+    background-color: #c5c5c5;
+    color: #fff;
+}
+
+.foodtalk_box .repurchase .no_intention span:last-child {
+    padding: 5px 10px;
+    color: #c5c5c5;
+}
+
+.foodtalk_box .repurchase .willing_to_buy {
+    padding: 5px 0px;
+}
+
+.foodtalk_box .repurchase .willing_to_buy span:first-child {
+    border: 1px solid #e696a0;
+    border-radius: 15px;
+    padding: 5px 5px;
+    background-color: #e696a0;
+    color: #fff;
+}
+
+.foodtalk_box .repurchase .willing_to_buy span:last-child {
+    padding: 5px 10px;
+    color: #E95468;
+}
+
+/* 가격확인 영역 */
+.foodtalk_box .price_check {
+    margin: 5px 0px;
+    background-color: #E95468;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 36px;
+    line-height: 36px;
+}
+
+.foodtalk_box .price_check .price_check_icon {
+    background-image: url('/img/pc_header_img_sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 -115px;
+    padding: 0px 0px 0px 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 푸드톡 댓글 영역 */
+.foodtalk_navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.foodtalk_box .foodtalk_contents {
+    background: #fff;
+    margin-top: 190px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.foodtalk_box .foodtalk_contents .foodtalk_navbar {
+    padding: 10px;
+    color: #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    z-index: 100;
+    background: #fff;
+}
+
+.foodtalk_box .foodtalk_contents .comments {
+    padding: 10px;
+    position: relative;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_img_box {
+    float: left;
+    position: relative;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_img_box .user_img {
+    float: left;
+    border-radius: 50%;
+    border: 3px solid #E95468;
+    height: 40px;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_img_box .user_img img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_img_box .user_img span {
+    position: absolute;
+    bottom: -6px;
+    left: 9px;
+    color: #fff;
+    font-size: 1.000em;
+    font-weight: bold;
+    border: 1px solid #E95468;
+    background-color: #E95468;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment {
+    float: left;
+    width: 82%;
+    margin-left: 5px;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .user_name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .species {
+    color: #ababab;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev {
+    letter-spacing: -2px;
+    margin: 4px 0px;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .starR {
+    color: #ababab;
+    font-size: 1.2em;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .starR.on {
+    color: gold;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .comment_repurchase {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .comment_repurchase .title {
+    margin: 0px 4px;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .comment_to_buy {
+    border: 1px solid #e696a0;
+    border-radius: 15px;
+    padding: 0px 5px;
+    background-color: #e696a0;
+    color: #fff;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .starRev .comment_no_intention {
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    padding: 0px 5px;
+    background-color: #c5c5c5;
+    color: #fff;
+}
+
+.foodtalk_box .foodtalk_contents .comments .user_comment .user_best_comment {
+    width: 100%;
+    white-space: normal;
+    line-height: 1.4;
+    height: 48px;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 1.100em;
 }
